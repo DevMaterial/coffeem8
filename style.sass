@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Economica:700)
+html, body
+  margin: 0
+  padding: 0
+
+li
+  list-style: none
+  text-decoration: none
+
+.top-nav
+  color: black
+  padding: 20px
+  font-size: 14px
+
+.main-nav
+  position: fixed
+  width: 100%
+  background-color: #ffffff
+  padding-top: 20px
+  z-index: 1
+
+#bannerSection
+  position: relative
+  height: 809px
+  background:
+    image: url(img/banner.png)
+    size: auto 809px
+    position: top center
+    attachment: fixed
+    repeat: no-repeat
+
+.logo
+  height: 202.7px
+  width: 100%
+  background:
+    image: url(img/logo.png)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 40%
+
+.economica
+  font-family: 'Economica', sans-serif
+
+#aboutSection, #contactSection
+  background-color: #e2e2e2
+
+#aboutSection
+  padding: 50px 0 0 0
+
+#serviceSection
+  margin: 50px 0 50px 0
+
+#contactSection
+  padding: 50px 0 50px 0
+
+.about
+  font-size: 17px
+  padding: 100px 0 50px 0
+
+.img-center
+  display: block
+  margin: 0 auto
+  padding-bottom: 50px
+
+figure
+  position: relative
+  opacity: 0
+  transform: translateX(-20px)
+  transition: all 0.3s ease-in-out
+
+  &.is-showing
+    opacity: 1
+    transform: translateX(0px)
+
+.coffee
+  padding: 40px 0 40px 0
+
+img
+  display: block
+  margin: 0 auto
+
+.form-control
+  min-width: 50%
+
+.footer
+  background: #477981
+  height: 60px
+
+.foot-text
+  color: white
+  margin-top: 20px
+
+.foot-nav
+  margin-top: 20px
+
+.foot-nav li a
+  color: white
+  padding: 0px 10px 0 10px
