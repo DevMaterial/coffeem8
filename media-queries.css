@@ -1,0 +1,13 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 980px) {
+  .foot-nav{
+    display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .title{
+    display: none;
+  }
+}
