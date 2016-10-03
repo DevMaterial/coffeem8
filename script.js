@@ -31,3 +31,24 @@ function setBindings() {
 
   });
 }
+
+// Mobile Nav
+
+$('.burger-nav').on("click", function(){
+
+   $('nav ul').toggleClass('toggle');
+   $('.dimming').toggleClass('dim');
+   $('html').toggleClass('disableScroll');
+});
+
+if ( $(window).width() > 999) {
+  $('nav').addClass('nav-pills');
+} else {
+  $('nav').removeClass('nav-pills');
+}
+
+$('nav ul li').on('click', function (){
+  $('nav ul').removeClass('toggle');
+  $('.dimming').removeClass('dim');
+  $('html').removeClass('disableScroll');
+});

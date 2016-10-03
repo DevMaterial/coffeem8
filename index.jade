@@ -11,17 +11,20 @@ html(lang='en')
     .main-nav
       .container
         .economica
-          .title.col-md-6.col-sm-4.col-xs-4
+          .title.col-md-6.col-xs-5
             h1 CoffeeM8
-          
-          nav.main-nav.col-md-6.col-sm-4.col-xs-4.text-right 
+          img.burger-nav(src="http://i.imgur.com/eqg1AAv.png" width="50px")
+          nav.main-nav.col-md-6.text-right.pos
             ul
-              li
-                a.top-nav#banner(href='#bannerSection') Home
-                a.top-nav#about(href='#aboutSection') About
-                a.top-nav#service(href='#serviceSection') Services
-                a.top-nav#contact(href='#contactSection') Contact
-
+              li(role="presentation")
+                a.top-nav#banner(href='#bannerSection' class="nav-color") Home
+              li(role="presentation")
+                a.top-nav#about(href='#aboutSection' class="nav-color") About
+              li(role="presentation")
+                a.top-nav#service(href='#serviceSection' class="nav-color") Services
+              li(role="presentation")
+                a.top-nav#contact(href='#contactSection' class="nav-color") Contact
+  .dimming
     header#bannerSection
       .logo
     main
