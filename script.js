@@ -41,12 +41,6 @@ $('.burger-nav').on("click", function(){
    $('html').toggleClass('disableScroll');
 });
 
-if ( $(window).width() > 999) {
-  $('nav').addClass('nav-pills');
-} else {
-  $('nav').removeClass('nav-pills');
-}
-
 $('nav ul li').on('click', function (){
   $('nav ul').removeClass('toggle');
   $('.dimming').removeClass('dim');
