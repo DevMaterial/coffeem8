@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700');
+
+@mixin sectionSpacing ($height) { padding: $height 0; }
+@mixin typography ($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin primaryButton () {
+  width: 345px;
+  height: 40px;
+  border: 2px solid $black;
+  background-color: $white;
+  color: $black;
+  transition: all 0.2s;
+  @include typography('Open Sans', 15px, 400);
+  &:hover {
+    transition: all 0.2s;
+    color: $white;
+    background-color: $black;
+  }
+}
+
+h1 { @include typography('Open Sans', 60px, 700); }
+h2 { @include typography('Open Sans', 25px, 400); }
+h3 { @include typography('Open Sans', 14px, 300); }
+h4 { @include typography('Open Sans', 23px, 400); }
+
+$black: #212121;
+$white: #FAFAFA;
+
+body { background-color: #FAFAFA; }
+
+header {
+  .fa { display: none; }
+  nav {
+    h2 {
+      transform: rotate(-90deg);
+      position: fixed;
+      padding-bottom: 130px;
+      padding-right: 10px;
+      letter-spacing: 3px;
+     }
+     h3 {
+       position: absolute;
+       margin-left: 70px;
+       letter-spacing: 1px;
+       margin-top: 28px;
+     }
+    ul {
+      float: right;
+      margin-top: 25px;
+      li {
+        display: inline-block;
+        padding: 0 20px;
+        a {
+          @include typography('Open Sans', 14px, 700);
+          letter-spacing: 1px;
+          color: $black;
+          text-decoration: none;
+          transition: all 0.3s;
+          &:hover {
+            transition: all 0.1s;
+            text-decoration: none;
+            color: #B2DFDB;
+          }
+          &:active, &:visited, &:focus { text-decoration: none; }
+        }
+      }
+    }
+    @media screen and (max-width: 850px) {
+      .fa { display: block; }
+      i {
+        margin-top: 20px;
+        float: right;
+      }
+      h2 {
+        transform: none !important;
+        position: absolute;
+        padding-bottom: 0px;
+        padding-right: 0px;
+      }
+      h3 { display: none; }
+      ul {
+        background-color: #212121;
+        margin-top: 60px;
+        padding-left: 0;
+        height: 0;
+        float: none;
+        text-align: center;
+        transition: ease-in-out 0.3s;
+        li {
+          display: block;
+          text-align: center;
+          padding: 10px 0;
+          a { color: #FAFAFA; }
+        }
+      }
+    }
+  }
+}
+
+.navStatus {
+  height: 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+#home {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+  h1 {
+    line-height: 70px;
+  }
+  h2 {
+    @include typography('Open Sans', 60px, 300);
+    font-style: italic;
+  }
+  .motto {
+    h2 {
+      @include typography('Open Sans', 36px, 300);
+      letter-spacing: 1px;
+      line-height: 50px;
+      border-left: 1px solid $black;
+      border-right: 1px solid $black;
+      margin-top: 70px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    padding-top: 0;
+    .motto h2 {
+      width: 100%;
+      font-size: 30px;
+      padding-left: 10%;
+      margin-top: 150px;
+      padding-right: 10%;
+    }
+  }
+  @media screen and (max-width: 667px) {
+    h1 { font-size: 55px }
+    h2 { font-size: 45px }
+  }
+}
+
+#about {
+  @include sectionSpacing(75px);
+  h2 { font-size: 35px; }
+  p {
+    @include typography('Open Sans', 20px, 300);
+    width: 600px;
+    margin: 0 auto;
+    letter-spacing: 0.3px;
+    padding: 30px 0;
+    font-style: italic;
+  }
+  img {
+    width: 60px;
+  }
+  @media screen and (max-width: 850px) {
+    h2 { font-size: 30px; }
+    p {
+      width: 80%;
+      font-size: 19px;
+    }
+  }
+}
+
+#map {
+ height: 400px;
+ width: 100%;
+ pointer-events: none;
+}
+
+
+#services {
+  @include sectionSpacing(75px);
+  letter-spacing: 1px;
+  img { width: 250px; }
+  h2 { font-size: 35px; }
+  p {
+    @include typography('Open Sans', 14px, 300);
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  h4 {
+    margin-top: 20px;
+  }
+  .title {
+    p {
+      padding: 20px 0 40px 0;
+      width: 80%;
+      font-style: italic;
+    }
+  }
+}
+
+#contact {
+  @include sectionSpacing(55px);
+  img {
+    width: 100%;
+  }
+  h2 {
+    padding-bottom: 40px;
+    font-size: 35px;
+  }
+  h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  input {
+    width: 347px;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #111;
+    @include typography('Open Sans', 14px, 300);
+  }
+  textarea {
+    border: 1px solid #111;
+    padding: 5px 10px;
+    width: 100%;
+    @include typography('Open Sans', 14px, 300);
+  }
+  button {
+    @include primaryButton;
+    margin-top: 15px;
+  }
+}
+
+footer {
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  background-color: $black;
+  .newsletter {
+    form {
+      border-bottom: 1px solid $white;
+      margin-top: 25px;
+      input {
+        @include typography('Open Sans', 14px, 300);
+        width: 80%;
+        height: 35px;
+        border: none;
+        background-color: $black;
+        letter-spacing: 1px;
+        color: $white;
+      }
+      button {
+        color: $white;
+        width: 5%;
+        padding-left: 20px;
+        background-color: $black;
+        border: none;
+        height: 34px;
+      }
+    }
+  }
+  nav {
+    ul {
+      text-align: left;
+      text-decoration: none;
+      list-style: none;
+      li {
+        padding: 4px 0;
+        a {
+          @include typography('Open Sans', 14px, 100);
+          letter-spacing: 1px;
+          color: $white;
+          transition: all 0.3s;
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+            transition: all 0.1s;
+            color: #B2DFDB;
+          }
+          &:active { text-decoration: none; }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .footer-content { margin: 0 auto; }
+    form { margin-top: 0; }
+    nav {
+      ul {
+        padding-left: 0;
+        margin-top: 50px;
+        text-align: center;
+      }
+    }
+  }
+}

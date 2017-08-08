@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700");
+h1 {
+  font-family: "Open Sans";
+  font-size: 60px;
+  font-weight: 700; }
+
+h2 {
+  font-family: "Open Sans";
+  font-size: 25px;
+  font-weight: 400; }
+
+h3 {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300; }
+
+h4 {
+  font-family: "Open Sans";
+  font-size: 23px;
+  font-weight: 400; }
+
+body {
+  background-color: #FAFAFA; }
+
+header .fa {
+  display: none; }
+
+header nav h2 {
+  transform: rotate(-90deg);
+  position: fixed;
+  padding-bottom: 130px;
+  padding-right: 10px;
+  letter-spacing: 3px; }
+
+header nav h3 {
+  position: absolute;
+  margin-left: 70px;
+  letter-spacing: 1px;
+  margin-top: 28px; }
+
+header nav ul {
+  float: right;
+  margin-top: 25px; }
+  header nav ul li {
+    display: inline-block;
+    padding: 0 20px; }
+    header nav ul li a {
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #212121;
+      text-decoration: none;
+      transition: all 0.3s; }
+      header nav ul li a:hover {
+        transition: all 0.1s;
+        text-decoration: none;
+        color: #B2DFDB; }
+      header nav ul li a:active, header nav ul li a:visited, header nav ul li a:focus {
+        text-decoration: none; }
+
+@media screen and (max-width: 850px) {
+  header nav .fa {
+    display: block; }
+  header nav i {
+    margin-top: 20px;
+    float: right; }
+  header nav h2 {
+    transform: none !important;
+    position: absolute;
+    padding-bottom: 0px;
+    padding-right: 0px; }
+  header nav h3 {
+    display: none; }
+  header nav ul {
+    background-color: #212121;
+    margin-top: 60px;
+    padding-left: 0;
+    height: 0;
+    float: none;
+    text-align: center;
+    transition: ease-in-out 0.3s; }
+    header nav ul li {
+      display: block;
+      text-align: center;
+      padding: 10px 0; }
+      header nav ul li a {
+        color: #FAFAFA; } }
+
+.navStatus {
+  height: 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: ease-in-out 0.3s; }
+
+#home {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+  #home img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; }
+  #home h1 {
+    line-height: 70px; }
+  #home h2 {
+    font-family: "Open Sans";
+    font-size: 60px;
+    font-weight: 300;
+    font-style: italic; }
+  #home .motto h2 {
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 50px;
+    border-left: 1px solid #212121;
+    border-right: 1px solid #212121;
+    margin-top: 70px;
+    text-align: center; }
+  @media screen and (max-width: 850px) {
+    #home {
+      padding-top: 0; }
+      #home .motto h2 {
+        width: 100%;
+        font-size: 30px;
+        padding-left: 10%;
+        margin-top: 150px;
+        padding-right: 10%; } }
+  @media screen and (max-width: 667px) {
+    #home h1 {
+      font-size: 55px; }
+    #home h2 {
+      font-size: 45px; } }
+
+#about {
+  padding: 75px 0; }
+  #about h2 {
+    font-size: 35px; }
+  #about p {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 300;
+    width: 600px;
+    margin: 0 auto;
+    letter-spacing: 0.3px;
+    padding: 30px 0;
+    font-style: italic; }
+  #about img {
+    width: 60px; }
+  @media screen and (max-width: 850px) {
+    #about h2 {
+      font-size: 30px; }
+    #about p {
+      width: 80%;
+      font-size: 19px; } }
+
+#map {
+  height: 400px;
+  width: 100%;
+  pointer-events: none; }
+
+#services {
+  padding: 75px 0;
+  letter-spacing: 1px; }
+  #services img {
+    width: 250px; }
+  #services h2 {
+    font-size: 35px; }
+  #services p {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 20px; }
+  #services h4 {
+    margin-top: 20px; }
+  #services .title p {
+    padding: 20px 0 40px 0;
+    width: 80%;
+    font-style: italic; }
+
+#contact {
+  padding: 55px 0; }
+  #contact img {
+    width: 100%; }
+  #contact h2 {
+    padding-bottom: 40px;
+    font-size: 35px; }
+  #contact h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px; }
+  #contact input {
+    width: 347px;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #111;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300; }
+  #contact textarea {
+    border: 1px solid #111;
+    padding: 5px 10px;
+    width: 100%;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300; }
+  #contact button {
+    width: 345px;
+    height: 40px;
+    border: 2px solid #212121;
+    background-color: #FAFAFA;
+    color: #212121;
+    transition: all 0.2s;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px; }
+    #contact button:hover {
+      transition: all 0.2s;
+      color: #FAFAFA;
+      background-color: #212121; }
+
+footer {
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  background-color: #212121; }
+  footer .newsletter form {
+    border-bottom: 1px solid #FAFAFA;
+    margin-top: 25px; }
+    footer .newsletter form input {
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 300;
+      width: 80%;
+      height: 35px;
+      border: none;
+      background-color: #212121;
+      letter-spacing: 1px;
+      color: #FAFAFA; }
+    footer .newsletter form button {
+      color: #FAFAFA;
+      width: 5%;
+      padding-left: 20px;
+      background-color: #212121;
+      border: none;
+      height: 34px; }
+  footer nav ul {
+    text-align: left;
+    text-decoration: none;
+    list-style: none; }
+    footer nav ul li {
+      padding: 4px 0; }
+      footer nav ul li a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #FAFAFA;
+        transition: all 0.3s;
+        text-decoration: none; }
+        footer nav ul li a:hover {
+          text-decoration: none;
+          transition: all 0.1s;
+          color: #B2DFDB; }
+        footer nav ul li a:active {
+          text-decoration: none; }
+  @media screen and (max-width: 991px) {
+    footer .footer-content {
+      margin: 0 auto; }
+    footer form {
+      margin-top: 0; }
+    footer nav ul {
+      padding-left: 0;
+      margin-top: 50px;
+      text-align: center; } }
