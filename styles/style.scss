@@ -21,7 +21,7 @@
   }
 }
 
-h1 { @include typography('Open Sans', 60px, 700); }
+h1 { @include typography('Open Sans', 53px, 700); }
 h2 { @include typography('Open Sans', 25px, 400); }
 h3 { @include typography('Open Sans', 14px, 300); }
 h4 { @include typography('Open Sans', 23px, 400); }
@@ -113,14 +113,15 @@ header {
   img {
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.9;
   }
   h1 {
     line-height: 70px;
   }
   h2 {
-    @include typography('Open Sans', 60px, 300);
+    @include typography('Open Sans', 53px, 300);
     font-style: italic;
+    letter-spacing: 1px;
   }
   .motto {
     h2 {
@@ -217,7 +218,7 @@ header {
     letter-spacing: 1px;
   }
   input {
-    width: 347px;
+    width: 100%;
     height: 30px;
     padding: 0 10px;
     border: 1px solid #111;
@@ -231,6 +232,7 @@ header {
   }
   button {
     @include primaryButton;
+    width: 100%;
     margin-top: 15px;
   }
 }
